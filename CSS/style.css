@@ -12,12 +12,16 @@ h1,h2 {
 h3,p,li{
   font-family: "Slabo";
   font-weight: normal;
-  text-align: justify;
+  text-align: left;
 }
 
 ul {
   list-style: none;
 }
+.right{
+  text-align: right;}
+  
+
 section {
   line-height: 2em;
 }
