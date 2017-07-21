@@ -3,17 +3,55 @@ body {
   text-align: center;
   margin: 30px 160px 10px 180px;
   max-width: 100%
+  position: absolute;
 }
 
 h1,h2 {
-  font-family:"Zilla-Slab";
+  font-family: "Signika";
   font-weight: 700;
 }
 
 h3,p,li{
-  font-family: "Slabo";
-  font-weight: normal;
+  font-family: "Bree Serif";
+  font-size: 1.2em;
 
+}
+
+main h2 {
+  outline: 3px dotted #303235;
+  outline-offset: 5px;
+}
+
+.entete {
+  border: 10px dashed #d9e6f9;
+  outline:10px dashed #dee1e5;
+  outline-offset: 5px;
+  margin: 62px ;
+  z-index: -1;
+  padding-bottom: 50px;
+  color: #303235;
+
+}
+.entete h1 {
+  font-size: 3em;
+}
+.entete h2{
+  color: #5f6163;
+  font-size: 2em;
+}
+
+.entete h3{
+  position:fixed;
+  top: 270px;
+  color: #303235;
+  left: 31.5%;
+  background-color:white;
+  z-index: 0;
+}
+
+main {
+  position: relative;
+  z-index:1;
 }
 
 ul {
@@ -22,6 +60,10 @@ ul {
 
 section {
   line-height: 2em;
+}
+#hand {
+  font-size: 40px;
+  margin-right: 15px;
 }
 
 .concon {
@@ -114,6 +156,7 @@ div.icon:nth-child(2) > ul:nth-child(1) > li:nth-child(5) {
 .part1 {
   background-color: #d9e6f9;
   margin-bottom: 20px;
+  position: sticky;
 }
 
 @keyframes fadein {
@@ -134,13 +177,14 @@ div.icon:nth-child(2) > ul:nth-child(1) > li:nth-child(5) {
 }
 
 .contact,a,.skills {
-    color:#5f6163 ;
+    color:#303235 ;
     animation-name: fadein2;
-    animation-duration: 4s;
+    animation-duration: 3s;
     }
 
 .part2{
   background-color: #f4f6f9;
+  margin-bottom: 20px;
 }
 
 @keyframes fadein3 {
@@ -161,9 +205,9 @@ div.icon:nth-child(2) > ul:nth-child(1) > li:nth-child(5) {
 }
 
 .educ,a,.exp {
-    color:#5f6163 ;
+    color:#303235 ;
     animation-name: fadein4;
-    animation-duration: 8s;
+    animation-duration: 6s;
     }
 
 .part3 {
@@ -179,7 +223,7 @@ div.icon:nth-child(2) > ul:nth-child(1) > li:nth-child(5) {
         color:#5f6163 ;
         animation-name: fadein5;
         animation-duration: 2s;
-      }
+            }
 
 @keyframes fadein6 {
           from {color: #d9e6f9;}
@@ -187,7 +231,7 @@ div.icon:nth-child(2) > ul:nth-child(1) > li:nth-child(5) {
       }
 
 .sports,.passions {
-          color:#5f6163 ;
+          color:#303235 ;
           animation-name: fadein6;
-          animation-duration: 12s;
-          }
+          animation-duration: 9s
+                  }
