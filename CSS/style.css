@@ -17,10 +17,10 @@ h3,p,li{
 
 }
 
-main h2 {
-  outline: 3px dotted #303235;
+.part1 h2, .part2 h2 {
+  outline: 3px outset #303235;
   outline-offset: 5px;
-}
+  }
 
 .entete {
   border: 10px dashed #d9e6f9;
@@ -38,11 +38,14 @@ main h2 {
 .entete h2{
   color: #5f6163;
   font-size: 2em;
+  border-bottom: 5px solid #d9e6f9;
+  display: inline-block;
+
 }
 
 .entete h3{
   position:fixed;
-  top: 270px;
+  top: 300px;
   color: #303235;
   left: 31.5%;
   background-color:white;
@@ -61,6 +64,11 @@ ul {
 section {
   line-height: 2em;
 }
+
+.part1,.part2,.part3 {
+  border: 3px dotted black;
+}
+
 #hand {
   font-size: 40px;
   margin-right: 15px;
@@ -110,6 +118,7 @@ div.icon:nth-child(2) > ul:nth-child(1) > li:nth-child(4) {
 
 div.icon:nth-child(2) > ul:nth-child(1) > li:nth-child(5) {
     font-size:14px;
+    padding-right: 2px;
 }
 
 
@@ -142,9 +151,19 @@ div.icon:nth-child(2) > ul:nth-child(1) > li:nth-child(5) {
   font-weight: 600;
 }
 
-.interets {
+.autres {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.autres section {
+  flex-basis: 33%;
+}
+
+#social, #social1 {
+  font-size: 3em;
 }
 
 .rugby{
@@ -207,7 +226,7 @@ div.icon:nth-child(2) > ul:nth-child(1) > li:nth-child(5) {
 .educ,a,.exp {
     color:#303235 ;
     animation-name: fadein4;
-    animation-duration: 6s;
+    animation-duration: 5s;
     }
 
 .part3 {
@@ -219,7 +238,7 @@ div.icon:nth-child(2) > ul:nth-child(1) > li:nth-child(5) {
         to {color: #5f6163;}
     }
 
-.inter  {
+.autres  {
         color:#5f6163 ;
         animation-name: fadein5;
         animation-duration: 2s;
@@ -230,8 +249,21 @@ div.icon:nth-child(2) > ul:nth-child(1) > li:nth-child(5) {
           to {color: #5f6163;}
       }
 
-.sports,.passions {
+.liens,.sports,.passions {
           color:#303235 ;
           animation-name: fadein6;
-          animation-duration: 9s
+          animation-duration: 7s
                   }
+#social {
+  color:#d9e6f9;
+}
+#social:hover {
+  color: #303235;
+}
+
+#social1 {
+  color:#303235;
+}
+#social1:hover {
+  color: #d9e6f9;
+}
