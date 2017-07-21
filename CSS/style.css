@@ -1,7 +1,8 @@
 body {
   box-sizing: border-box;
   text-align: center;
-  margin: 30px 180px 10px
+  margin: 30px 180px 10px;
+  max-width: 100%
 }
 
 h1,h2 {
@@ -12,24 +13,101 @@ h1,h2 {
 h3,p,li{
   font-family: "Slabo";
   font-weight: normal;
-  text-align: left;
+
 }
 
 ul {
   list-style: none;
 }
-.right{
-  text-align: right;}
-  
 
 section {
   line-height: 2em;
 }
 
-div {
+.concon {
   display: flex;
-  justify-content: space-around;}
+  justify-content: space-around;
+}
 
-div section{
+.text2 {
+  text-align: left;
+}
+.text1 {
+  text-align: right;
+}
+
+.contactskills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.contact,.skills {
   flex-basis: 40%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#icon {
+  font-size: 21px;
+}
+/*Changements des tailles de dots*/
+div.icon:nth-child(2) > ul:nth-child(1) > li:nth-child(1) {
+    font-size:21px;
+}
+div.icon:nth-child(2) > ul:nth-child(1) > li:nth-child(2) {
+    font-size:19px;
+}
+div.icon:nth-child(2) > ul:nth-child(1) > li:nth-child(3) {
+    font-size:17px;
+}
+div.icon:nth-child(2) > ul:nth-child(1) > li:nth-child(4) {
+    font-size:15.5px;
+}
+
+div.icon:nth-child(2) > ul:nth-child(1) > li:nth-child(5) {
+    font-size:14px;
+}
+
+
+.edexp{
+  display: flex;
+  justify-content: space-around;
+}
+
+.educexp {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.educ,.exp {
+  flex-basis: 48%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin: -6px;
+}
+
+
+.form {
+  width: 390px;
+}
+
+.educexp ul{
+  line-height: 2.7em;
+}
+
+.dates {
+  width: 180px;
+}
+.dates li{
+  font-weight: 600;
+}
+.exps {
+  width: 358px;
+}
+.interets {
+  display: flex;
+  justify-content: space-around;
 }
