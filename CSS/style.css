@@ -1,7 +1,7 @@
 body {
   box-sizing: border-box;
   text-align: center;
-  margin: 30px 180px 10px;
+  margin: 30px 160px 10px 180px;
   max-width: 100%
 }
 
@@ -79,16 +79,14 @@ div.icon:nth-child(2) > ul:nth-child(1) > li:nth-child(5) {
 .educexp {
   display: flex;
   flex-flow: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
 .educ,.exp {
-  flex-basis: 48%;
   display: flex;
   flex-flow: row;
   justify-content: center;
-  margin: -6px;
-}
-
+  }
 
 .form {
   width: 390px;
@@ -98,16 +96,98 @@ div.icon:nth-child(2) > ul:nth-child(1) > li:nth-child(5) {
   line-height: 2.7em;
 }
 
-.dates {
-  width: 180px;
-}
 .dates li{
   font-weight: 600;
 }
-.exps {
-  width: 358px;
-}
+
 .interets {
   display: flex;
   justify-content: space-around;
 }
+
+.rugby{
+  margin-left: 13px;
+}
+.mondeasso {
+  margin-left:16px;
+}
+.part1 {
+  background-color: #d9e6f9;
+  margin-bottom: 20px;
+}
+
+@keyframes fadein {
+    from {color: #aacbff;}
+    to {color: #5f6163;}
+}
+
+.concon  {
+    color:#5f6163 ;
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+
+
+@keyframes fadein2 {
+    from {color: #d9e6f9;}
+    to {color: #5f6163;}
+}
+
+.contact,a,.skills {
+    color:#5f6163 ;
+    animation-name: fadein2;
+    animation-duration: 4s;
+    }
+
+.part2{
+  background-color: #f4f6f9;
+}
+
+@keyframes fadein3 {
+    from {color: #aacbff;}
+    to {color: #5f6163;}
+}
+
+.edexp  {
+    color:#5f6163 ;
+    animation-name: fadein3;
+    animation-duration: 2s;
+}
+
+
+@keyframes fadein4 {
+    from {color: #f4f6f9;}
+    to {color: #5f6163;}
+}
+
+.educ,a,.exp {
+    color:#5f6163 ;
+    animation-name: fadein4;
+    animation-duration: 8s;
+    }
+
+.part3 {
+      background-color: #d9e6f9;
+    }
+
+@keyframes fadein5 {
+        from {color: #aacbff;}
+        to {color: #5f6163;}
+    }
+
+.inter  {
+        color:#5f6163 ;
+        animation-name: fadein5;
+        animation-duration: 2s;
+      }
+
+@keyframes fadein6 {
+          from {color: #d9e6f9;}
+          to {color: #5f6163;}
+      }
+
+.sports,.passions {
+          color:#5f6163 ;
+          animation-name: fadein6;
+          animation-duration: 12s;
+          }
